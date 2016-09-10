@@ -15,6 +15,8 @@
 		EC5F5C3A1D8204F600EF3E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5F5C381D8204F600EF3E90 /* LaunchScreen.storyboard */; };
 		EC5F5C451D8204F600EF3E90 /* Camera_Interface_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5F5C441D8204F600EF3E90 /* Camera_Interface_DemoTests.m */; };
 		EC5F5C501D8204F600EF3E90 /* Camera_Interface_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5F5C4F1D8204F600EF3E90 /* Camera_Interface_DemoUITests.m */; };
+		ECACF05A1D830032005D6575 /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECACF0591D830032005D6575 /* PreviewView.m */; };
+		ECACF05D1D83022A005D6575 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECACF05C1D83022A005D6575 /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		EC5F5C4B1D8204F600EF3E90 /* Camera Interface DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camera Interface DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5F5C4F1D8204F600EF3E90 /* Camera_Interface_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camera_Interface_DemoUITests.m; sourceTree = "<group>"; };
 		EC5F5C511D8204F600EF3E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECACF0581D830032005D6575 /* PreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		ECACF0591D830032005D6575 /* PreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
+		ECACF05B1D83022A005D6575 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		ECACF05C1D83022A005D6575 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		EC5F5C291D8204F600EF3E90 /* Camera Interface Demo */ = {
 			isa = PBXGroup;
 			children = (
+				ECACF0571D830012005D6575 /* Viewfinder Classes */,
 				EC5F5C2D1D8204F600EF3E90 /* AppDelegate.h */,
 				EC5F5C2E1D8204F600EF3E90 /* AppDelegate.m */,
 				EC5F5C301D8204F600EF3E90 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				EC5F5C511D8204F600EF3E90 /* Info.plist */,
 			);
 			path = "Camera Interface DemoUITests";
+			sourceTree = "<group>";
+		};
+		ECACF0571D830012005D6575 /* Viewfinder Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECACF0581D830032005D6575 /* PreviewView.h */,
+				ECACF0591D830032005D6575 /* PreviewView.m */,
+				ECACF05B1D83022A005D6575 /* CameraViewController.h */,
+				ECACF05C1D83022A005D6575 /* CameraViewController.m */,
+			);
+			path = "Viewfinder Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECACF05D1D83022A005D6575 /* CameraViewController.m in Sources */,
 				EC5F5C321D8204F600EF3E90 /* ViewController.m in Sources */,
+				ECACF05A1D830032005D6575 /* PreviewView.m in Sources */,
 				EC5F5C2F1D8204F600EF3E90 /* AppDelegate.m in Sources */,
 				EC5F5C2C1D8204F600EF3E90 /* main.m in Sources */,
 			);
@@ -423,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cianduffy.Camera-Interface-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -437,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cianduffy.Camera-Interface-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
